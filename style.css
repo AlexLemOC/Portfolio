@@ -20,7 +20,7 @@ body {
       hsla(240, 70%, 70%, 1) 80%,
       hsla(300, 70%, 70%, 1) 100%
     );
-    /*-webkit-background-clip: text;*/
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
