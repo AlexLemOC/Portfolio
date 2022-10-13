@@ -1,8 +1,8 @@
 import SimplexNoise from "simplex-noise";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./base.css";
-import "./style.css";
+import "/base.css";
+import "/style.css";
 
 const content = document.querySelector("#content");
 
@@ -10,9 +10,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const simplex = new SimplexNoise();
 
-// Create circles, step circles and lines
+// Creation de 1500 éléments auquel je donne une forme de cercle
 for (let i = 0; i < 1500; i++) {
-  // Define it's a step every 250 circles (500px)
+  // Je définie une étape tous les 250 cerlces (500px)
   const step = i % 250 === 0 && i !== 0;
   const div = document.createElement("div");
 
@@ -22,7 +22,8 @@ for (let i = 0; i < 1500; i++) {
     div.classList.add("circle");
   }
 
-  // Create noise coefficients
+  // J'utilise le "bruit de perlin" pour appliquer des coefficients qui multiplient des valeurs
+  // Le coef est généré aléatoirement mais toujours légérement inférieur ou suppérieur à la précédente
   const c1 = simplex.noise2D(i * 0.003, i * 0.0033);
   const c2 = simplex.noise2D(i * 0.002, i * 0.001);
 
@@ -40,6 +41,7 @@ for (let i = 0; i < 1500; i++) {
   Object.assign(div.style, style);
   content.appendChild(div);
 
+  // Je définie la teinte de chaque cercle en fonction de sa position dans la liste
   if (step) {
     const div = document.createElement("div");
     div.classList.add("line");
@@ -53,7 +55,7 @@ for (let i = 0; i < 1500; i++) {
   }
 }
 
-// Create circles animations
+// Je créé une animation de cercle avec GSAP pour un déclanchement au centre de l'écran
 const Circles = document.querySelectorAll(".circle");
 const tl = gsap.timeline({
   scrollTrigger: {
@@ -68,7 +70,7 @@ Circles.forEach((c) => {
   });
 });
 
-// Create Step circles animations
+// Je créé une étape qui concerne un cerlcle en particulier qui sera une information du CV
 const StepCircles = document.querySelectorAll(".step-circle");
 StepCircles.forEach((step_circle) => {
   gsap.from(step_circle, {
@@ -82,7 +84,7 @@ StepCircles.forEach((step_circle) => {
   });
 });
 
-// Create Line animations
+// Création de l'animation de la ligne qui indiquera l'étape d'une information du CV
 const Lines = document.querySelectorAll(".line");
 Lines.forEach((line) => {
   gsap.from(line, {
@@ -95,7 +97,7 @@ Lines.forEach((line) => {
   });
 });
 
-// Create Steps animations
+// Animation des étapes
 const Steps = document.querySelectorAll(".step");
 Steps.forEach((step) => {
   gsap.from(step, {

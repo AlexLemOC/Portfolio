@@ -1,17 +1,19 @@
 {
-    "name": "rainbow_cv",
-    "private": true,
-    "version": "0.0.0",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview"
-    },
-    "devDependencies": {
-        "vite": "^2.9.9"
-    },
-    "dependencies": {
-        "gsap": "^3.11.3",
-        "simplex-noise": "^3.0.1"
-    }
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "gsap": "^3.11.3",
+    "nodejs": "^0.0.0",
+    "simplex-noise": "^3.0.1"
+  }
 }
