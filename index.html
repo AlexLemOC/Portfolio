@@ -16,43 +16,49 @@
 
 
   <body>
+    <header>
+      <ul>
+        <li>
+          <a href="">
+            <h3>Accueil</h3>
+          </a>
+        </li>
+        <li>
+          <a href="/CV/CV.html">
+            <h3>Mon CV interactif</h3>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h3>Certifications</h3>
+          </a>
+        </li>
+      </ul>
+    </header>
     <main>
-      <header>
-        <ul>
-          <li>
-            <a href="">
-              <h3>Accueil</h3>
-            </a>
-          </li>
-          <li>
-            <a href="/CV/CV.html">
-              <h3>Mon CV</h3>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <h3>Certifications</h3>
-            </a>
-          </li>
-        </ul>
-      </header>
-      <div>
+      <div class="title">
         <h1>Alexis Lemée</h1>
       </div>
-      <div>
-        <p>Jeune développeur web junior curieux et passionné <br/>par la programmation et la conception web frontend et backend.</p>
-        <p>Vous pouvez me retrouver sur LinkedIn et GitHub</p>
-        <!--mettre les icônes liens vers LinkedIn et GitHub-->
+      <div class="desc-container">
+        <div class="description">
+          <p>Jeune développeur web junior curieux et passionné par la programmation et la conception web frontend et backend.</p>
+          <p>Vous pouvez me retrouver sur LinkedIn et GitHub</p>
+          <div class="icon-container">
+            <a href="https://www.linkedin.com/in/alexis-lemée-5760a1252/" target="_blank"><img src="/img/LinkedIn-Icon-Logo.wine.svg" alt="LinkedIn" title="LinkedIn"></a>
+            <a href="https://github.com/AlexLemOC" target="_blank"><img src="/img/GitHub-Icon-White-Logo.wine.svg" alt="GitHub" title="GitHub"></a>
+          </div>
+          <!--mettre les icônes liens vers LinkedIn et GitHub-->
+        </div>
       </div>
       <div>
         <h2> Mon CV est disponible sous deux formats :</h2>
         <a href="CV/CV.html">Interactif<br/></a> <!--boutton à faire-->
-        <a href="">Papier / PDF</a> <!--boutton à faire-->
+        <a href="/img/CV_Alexis_LEMÉE_Développeur_Web.pdf">Papier / PDF</a> <!--boutton à faire-->
       </div>
 
-      <footer>
-        <p>Site créé avec ViteJs et GSAP</p>
-      </footer>
     </main>
+    <footer>
+      <p>Site créé avec ViteJs et GSAP</p>
+    </footer>
   </body>
 </html>
