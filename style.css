@@ -13,6 +13,15 @@ header ul{
   font-size: 20px;
 }
 
+header li:nth-child(1){
+  padding-right: 1em;
+}
+
+header li:nth-child(2){
+  margin-left: 1.5em;
+  padding-right: 1em;
+}
+
 header a{
   text-decoration: none;
   color: white;
@@ -41,4 +50,95 @@ header a{
 
 .description p:first-child{
   margin: 2em;
+  padding-left: 1em;
+}
+
+.description p:nth-child(2){
+  margin-bottom: 3em;
+}
+
+.icon-link1{
+  display: block;
+  padding: 0 0 0 1.5em;
+  margin-bottom: 3em;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 100%;
+}
+
+.icon-link1 img{
+  width: 200px;
+  height: 200px;
+  margin: -25px;
+}
+
+.icon-link2{
+  display: block;
+  margin: 0 0 3em 0;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.icon-link2 img{
+  width: 200px;
+  height: 200px;
+  margin: -25px;
+}
+
+.title-secondary{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-secondary a{
+  margin-top: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+.color-box{
+  position: relative;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.color-box:hover::before{
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 50%;
+  background-color: green;
+  animation: animate 4s linear infinite;
+}
+
+.color-box:hover::after{
+  content: "";
+  background-color: black;
+  inset: 4px;
+  position: absolute;
+  border-radius: 16px;
+}
+
+@keyframes animate {
+  from{
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.color-box p{
+  position: relative;
+  color: white;
+  font-size: 18px;
+  z-index: 2;
 }
