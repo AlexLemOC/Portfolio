@@ -142,7 +142,7 @@ header h3{
   transition: 0.4s;
 }
 
-.icon-link2 img{
+.icon-link2 svg{
   width: 200px;
   height: 200px;
   margin: -25px;
