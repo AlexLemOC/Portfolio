@@ -1,24 +1,80 @@
 body {
   background: black;
   color: white;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 header ul{
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   flex-direction: row;
   justify-content: space-around;
   list-style-type: none;
   font-size: 20px;
-  margin: 30px 0 30px 0;
 }
 
-header ul li:nth-child(2){
-  margin-left: 60px;
+header li:nth-child(1){
+  padding-right: 1em;
+}
+
+header li:nth-child(2){
+  padding-right: 1em;
 }
 
 header a{
   text-decoration: none;
   color: white;
+}
+
+header h3, header h3::before{
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+header h3{
+  position: relative;
+  top: 30px;
+}
+
+.l-1:hover::before{
+  content: 'Accueil';
+  top: 45px;
+  transform: scale(1, -1);
+  backface-visibility: visible;
+  color: transparent;
+  text-shadow: 0px 20px 2px white;
+  z-index: 1;
+}
+
+.l-2:hover::before{
+  content: 'Mon CV papier';
+  top: 45px;
+  transform: scale(1, -1);
+  backface-visibility: visible;
+  color: transparent;
+  text-shadow: 0px 20px 2px white;
+  z-index: 1;
+}
+
+.l-3:hover::before{
+  content: 'Projets';
+  top: 45px;
+  transform: scale(1, -1);
+  backface-visibility: visible;
+  color: transparent;
+  text-shadow: 0px 20px 2px white;
+  z-index: 1;
+}
+
+.backLink{
+  position: absolute;
+  top: 100px;
+  left: 30px;
 }
 
 .colored {
