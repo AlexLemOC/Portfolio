@@ -123,7 +123,8 @@ header h3{
   transition: 0.4s;
 }
 
-.icon-link1 img{
+/* remplacer svg par img pour utiliser le fichier */
+.icon-link1 svg{
   width: 200px;
   height: 200px;
   margin: -25px;
@@ -142,6 +143,7 @@ header h3{
   transition: 0.4s;
 }
 
+/* remplacer svg par img pour utiliser le fichier */
 .icon-link2 svg{
   width: 200px;
   height: 200px;
@@ -220,7 +222,8 @@ header h3{
   overflow: hidden;
 }
 
-.paper-box img{
+/* remplacer svg par img pour utiliser le fichier */
+.paper-box svg{
   position: absolute;
   width: 150px;
   height: 150px;
@@ -236,7 +239,8 @@ header h3{
   font-size: 18px;
 }
 
-.paper-box:hover img{
+/* remplacer svg par img pour utiliser le fichier */
+.paper-box:hover svg{
   z-index: 3;
   padding: 0;
   transform: rotate(0);
