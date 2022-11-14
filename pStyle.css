@@ -74,6 +74,7 @@ body {
 
   section {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 20px;
     margin-top: 100px;
@@ -90,4 +91,8 @@ body {
 
   section p{
     font-size: 20px;
+  }
+
+  section:nth-child(odd){
+    justify-content: right;
   }
